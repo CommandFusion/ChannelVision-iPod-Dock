@@ -1,0 +1,351 @@
+<gui>
+  <properties>
+    <project>XBMC</project>
+    <designer>GuiLink</designer>
+    <size>
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+  </properties>
+  <systems>
+    <system name="iPodDock" ip="27.32.176.111" port="2104" protocol="tcp" alwayson="1" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="\x0D\x0A" connectionStatus="0" disconnectionStatus="0">
+      <cmd name="test">test</cmd>
+      <cmd name="alphabar" js="iPodDock.selectArtistLetter(data);" jsSendsCommand="True">[sliderval]</cmd>
+      <fb name="iPodDock_Incoming" regex="." />
+    </system>
+  </systems>
+  <themes>
+    <theme type="background" name=".newtheme_1"><![CDATA[ background-image: url(XBMC_App.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".home_btn[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(home_btn_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".home_btn[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(home_btn_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_tv[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_tv_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_tv[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_tv_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_genres[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_genres_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_genres[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_genres_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_artists[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_artists_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_artists[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_artists_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".settings[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(settings_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".settings[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(settings_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".wifi_led[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(wifi_led_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".wifi_led[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(wifi_led_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_prev[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_prev_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_prev[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_prev_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_play[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_play_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_play[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_play_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_next[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_next_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_next[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_next_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="gauge" name=".vol_bar[state='0']"><![CDATA[]]></theme>
+    <theme type="gauge" name=".vol_bar[state='1']"><![CDATA[ background-image: url(vol_bar_on.png);]]></theme>
+    <theme type="button" name=".cf_logo[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(cf_logo.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".cf_logo[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(cf_logo.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".list_content[state='0']"><![CDATA[padding: 0px 1px 0px 1px; -webkit-border-image: url(side_menu_list_off.png) 0 1 0 1; text-shadow: rgba(45,45,45,1) 0px 1px 0px; color: Silver; font-size: 20px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".list_content[state='1']"><![CDATA[padding: 0px 1px 0px 1px; -webkit-border-image: url(side_menu_list_on.png) 0 1 0 1; text-shadow: rgba(45,45,45,1) 0px 1px 0px; color: Silver; font-size: 20px; font-family: 'Verdana'; font-weight: bold; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_content[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(content_btn.png); color: Silver; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_content[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(content_btn.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_info[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_info.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".btn_info[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(btn_info.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_pause[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_pause_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_pause[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_pause_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_playlists[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_playlists_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".menu_playlists[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(menu_playlists_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_center[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_center_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_center[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_center_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_left[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_left_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_left[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_left_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_right[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_right_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_blank_right[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_blank_right_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_center[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_center_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_center[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_center_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_left[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_left_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_left[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_left_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_right[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_right_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_right[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_right_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_single[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_single_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".top_btn_single[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(top_btn_single_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".title_c"><![CDATA[ text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: #727272; font-size: 20px; font-family: 'Arial'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".blank[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".blank[state='1']"><![CDATA[padding: 0px 0px 0px 0px; color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".label"><![CDATA[ text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: #727272; font-size: 20px; font-family: 'Arial'; text-align: right; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".label_l"><![CDATA[ text-shadow: rgba(0,0,0,0.78) 0px -1px 0px; color: #727272; font-size: 20px; font-family: 'Arial'; text-align: left; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".text_l"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 16px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".small_c"><![CDATA[ text-shadow: rgba(0,0,0,1) 0px 1px 1px; color: White; font-size: 12px; font-family: 'Arial'; text-align: center; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="gauge" name=".alphabar[state='0']"><![CDATA[ background-image: url(alphabet.png);]]></theme>
+    <theme type="gauge" name=".alphabar[state='1']"><![CDATA[]]></theme>
+    <theme type="gauge" name=".small_h[state='0']"><![CDATA[ background-image: url(gauge_small_off.png);]]></theme>
+    <theme type="gauge" name=".small_h[state='1']"><![CDATA[ background-image: url(gauge_small_on.png);]]></theme>
+    <theme type="button" name=".transport_playpause[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_play_off.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".transport_playpause[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(transport_pause_on.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="channelvisiondock.js" />
+    <script name="coverart.js" />
+    <script name="spinner.js" />
+  </scripts>
+  <page name="Main" j="0" transition="" subtype="" time="0" ease="">
+    <portrait />
+    <landscape>
+      <img x="0" y="92" w="1024" h="61" j="0" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0">menu_bg.png</img>
+      <subpage name="MenuSelection" x="0" y="92" j="9" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="1" />
+      <btn j="0" x="959" y="92" w="61" h="61" t="cf_logo" flip="None" sim="0" l="0" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <subpage name="bg" x="0" y="147" j="0" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="1" topmost="0" v="1" l="1" />
+      <img x="419" y="196" w="162" h="162" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">coverart.png</img>
+      <subpage name="TopBar" x="0" y="0" j="0" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="1" topmost="0" v="1" l="1" />
+      <btn j="0" x="944" y="34" w="72" h="43" t="settings" flip="None" sim="1" l="1" s="1" js="iPodDock.isDevicePluggedIn();">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <subpage name="wifi" x="2" y="28" j="0" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="0" />
+      <btn j="0" x="118" y="35" w="65" h="43" t="top_btn_left" flip="None" sim="1" l="0" s="0" js="iPodDock.prevTrack();">
+        <inactive s="0">
+          <img x="13" y="-1" w="43" h="43">transports_grey_skip_prev_off_20.png</img>
+        </inactive>
+        <active s="0">
+          <img x="13" y="-1" w="43" h="43">transports_grey_skip_prev_on_20.png</img>
+        </active>
+      </btn>
+      <btn j="2" x="183" y="35" w="82" h="43" t="transport_playpause" flip="None" sim="0" l="0" s="1" js="iPodDock.playPause();">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="265" y="35" w="65" h="43" t="top_btn_right" flip="None" sim="1" l="0" s="0" js="iPodDock.nextTrack();">
+        <inactive s="0">
+          <img x="6" y="-1" w="43" h="43">transports_grey_skip_next_off_20.png</img>
+        </inactive>
+        <active s="0">
+          <img x="6" y="-1" w="43" h="43">transports_grey_skip_next_on_20.png</img>
+        </active>
+      </btn>
+      <subpage name="ipod" x="49" y="28" j="0" transition1="" subtype1="" time1="0" ease1="" transition2="" subtype2="" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="0" />
+      <subpage name="list" x="13" y="153" j="0" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="0" />
+      <btn j="0" x="0" y="82" w="76" h="82" t="home_btn" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <txt j="0" x="599" y="193" w="100" h="29" t="label_l" wrap="False" l="0">Artist:</txt>
+      <txt j="11" x="599" y="220" w="411" h="48" t="text_l" wrap="True" l="0">
+      </txt>
+      <txt j="0" x="599" y="253" w="100" h="29" t="label_l" wrap="False" l="0">Album:</txt>
+      <txt j="12" x="599" y="280" w="411" h="48" t="text_l" wrap="True" l="0">
+      </txt>
+      <txt j="0" x="599" y="313" w="100" h="29" t="label_l" wrap="False" l="0">Track:</txt>
+      <txt j="13" x="599" y="340" w="411" h="48" t="text_l" wrap="True" l="0">
+      </txt>
+      <txt j="0" x="412" y="726" w="133" h="29" t="label_l" wrap="False" l="0">Docked iPod:</txt>
+      <txt j="17" x="551" y="731" w="464" h="37" t="text_l" wrap="True" l="0">
+      </txt>
+      <btn j="4" x="611" y="34" w="72" h="43" t="top_btn_single" flip="None" sim="0" l="0" s="0" js="iPodDock.toggleRepeat();">
+        <inactive s="0">
+          <img x="14" y="0" w="43" h="43">transports_grey_repeat_off_25.png</img>
+        </inactive>
+        <active s="0">
+          <img x="14" y="0" w="43" h="43">transports_grey_repeat_on_25.png</img>
+        </active>
+      </btn>
+      <btn j="3" x="531" y="34" w="72" h="43" t="top_btn_single" flip="None" sim="0" l="0" s="0" js="iPodDock.toggleShuffle();">
+        <inactive s="0">
+          <img x="14" y="0" w="43" h="43">transports_grey_shuffle_off_25.png</img>
+        </inactive>
+        <active s="0">
+          <img x="14" y="0" w="43" h="43">transports_grey_shuffle_on_25.png</img>
+        </active>
+      </btn>
+      <txt j="20" x="536" y="77" w="65" h="14" t="small_c" wrap="False" l="0">
+      </txt>
+      <txt j="21" x="614" y="77" w="65" h="14" t="small_c" wrap="False" l="0">
+      </txt>
+      <img x="371" y="160" w="25" h="25" j="98" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">spinner_bg.png</img>
+      <gauge j="1" x="423" y="357" w="154" h="32" t="small_h" l="0" />
+      <txt j="14" x="423" y="380" w="44" h="21" t="small_c" wrap="False" l="0">00:00</txt>
+      <txt j="15" x="533" y="380" w="44" h="21" t="small_c" wrap="False" l="0">00:00</txt>
+      <img x="420" y="197" w="160" h="160" j="16" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="1" clearOnURLChange="0" />
+      <btn j="0" x="358" y="35" w="65" h="43" t="top_btn_left" flip="None" sim="1" l="0" s="0" js="iPodDock.prevTrack();">
+        <inactive s="0">
+          <img x="12" y="-1" w="43" h="43">transports_grey_rewind_off_20.png</img>
+        </inactive>
+        <active s="0">
+          <img x="12" y="-1" w="43" h="43">transports_grey_rewind_on_20.png</img>
+        </active>
+      </btn>
+      <btn j="0" x="423" y="35" w="65" h="43" t="top_btn_right" flip="None" sim="1" l="0" s="0" js="iPodDock.nextTrack();">
+        <inactive s="0">
+          <img x="8" y="-1" w="43" h="43">transports_grey_fast_forward_off_20.png</img>
+        </inactive>
+        <active s="0">
+          <img x="8" y="-1" w="43" h="43">transports_grey_fast_forward_on_20.png</img>
+        </active>
+      </btn>
+      <img x="370" y="158" w="27" h="28" j="99" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">spinner_blue_glow.png</img>
+      <img x="420" y="197" w="160" h="160" j="23" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="1" clearOnURLChange="0">coverart_mask.png</img>
+    </landscape>
+  </page>
+  <subpage name="bg" w="1024" h="621" clip="1">
+    <img x="0" y="0" w="1024" h="621" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">bg.png</img>
+  </subpage>
+  <subpage name="TopBar" w="1024" h="102" clip="1">
+    <img x="0" y="0" w="1024" h="102" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">top_bar.png</img>
+  </subpage>
+  <subpage name="wifi" w="55" h="55" clip="1">
+    <img x="12" y="25" w="31" h="24" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">wifi_icon.png</img>
+    <btn j="10" x="19" y="3" w="17" h="17" t="wifi_led" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="MenuSelection" w="522" h="61" clip="1">
+    <img x="0" y="0" w="522" h="61" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">menu_selection_bg.png</img>
+    <btn j="0" x="336" y="0" w="61" h="61" t="menu_genres" flip="None" sim="1" l="0" s="1" js="iPodDock.getGenres();">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="418" y="0" w="61" h="61" t="menu_playlists" flip="None" sim="1" l="0" s="1" js="iPodDock.getPlaylists();">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="256" y="0" w="61" h="61" t="menu_artists" flip="None" sim="1" l="0" s="1" js="iPodDock.getArtists();">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="MenuSearch" w="903" h="61" clip="1">
+    <img x="0" y="0" w="903" h="61" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">menu_search_bg.png</img>
+    <img x="680" y="16" w="186" h="29" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">menu_search.png</img>
+  </subpage>
+  <subpage name="transport" w="230" h="55" clip="1" />
+  <subpage name="list_content" w="387" h="56" clip="1">
+    <btn j="1" x="0" y="0" w="387" h="56" t="list_content" flip="None" sim="1" l="0" s="1" js="iPodDock.selectRecord(tokens[&quot;index&quot;] - 1);">
+      <inactive s="1">
+      </inactive>
+      <active s="1">
+      </active>
+    </btn>
+    <btn j="2" x="299" y="16" w="63" h="34" t="blank" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="clipboard" w="1024" h="768" clip="1">
+    <btn j="0" x="39" y="36" w="65" h="43" t="transport_prev" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="104" y="36" w="82" h="43" t="transport_play" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="186" y="36" w="65" h="43" t="transport_next" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="279" y="36" w="65" h="43" t="top_btn_left" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="344" y="36" w="82" h="43" t="top_btn_center" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="426" y="36" w="65" h="43" t="top_btn_right" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="519" y="36" w="65" h="43" t="top_btn_blank_left" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="584" y="36" w="82" h="43" t="top_btn_blank_center" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="666" y="36" w="65" h="43" t="top_btn_blank_right" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="775" y="36" w="72" h="43" t="top_btn_single" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <img x="10" y="191" w="487" h="568" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">content_half_bg_logo.png</img>
+    <img x="517" y="191" w="487" h="568" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">content_half_bg.png</img>
+    <img x="517" y="191" w="487" h="24" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">content_half_top_shadow.png</img>
+    <img x="10" y="191" w="487" h="24" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">content_half_top_shadow.png</img>
+  </subpage>
+  <subpage name="ipod" w="55" h="55" clip="1">
+    <img x="18" y="22" w="19" h="33" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">ipod_icon.png</img>
+    <btn j="1" x="19" y="3" w="17" h="17" t="wifi_led" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <btn j="0" x="8" y="1" w="40" h="53" t="blank" flip="None" sim="0" l="0" s="1" js="iPodDock.isDevicePluggedIn()">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="bg_dark" w="1024" h="615" clip="1">
+    <img x="0" y="0" w="1024" h="615" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">bg_dark.png</img>
+  </subpage>
+  <subpage name="list_title" w="387" h="30" clip="1">
+    <btn j="2" x="299" y="16" w="63" h="34" t="blank" flip="None" sim="0" l="0" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <txt j="1" x="15" y="5" w="63" h="34" t="text_l" wrap="False" l="0">Title</txt>
+  </subpage>
+  <subpage name="list" w="387" h="605" clip="1">
+    <img x="0" y="37" w="387" h="568" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">side_menu_bg_logo.png</img>
+    <list j="1" x="0" y="37" w="387" h="568" headerSub="" titleSub="list_title" contentSub="list_content" footerSub="" orientation="v" l="0" swipedelete="0" />
+    <img x="0" y="37" w="387" h="568" j="0" clickthrough="1" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0">side_menu_overlay.png</img>
+    <txt j="22" x="2" y="0" w="384" h="37" t="title_c" wrap="False" l="0">
+    </txt>
+    <slider j="2" d="0" x="339" y="54" w="48" h="533" min="0" max="27" decimals="0" pressCmd="alphabar" dragCmd="alphabar" unit="decimal" t="alphabar" invert="1" sim="0" l="0" />
+  </subpage>
+</gui>
